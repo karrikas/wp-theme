@@ -3200,7 +3200,7 @@ object {
 	/* Site Branding */
 
 	.site-branding {
-		padding: 3em 0;
+		padding: 1em 0;
 	}
 
 	/* Front Page */
@@ -3717,7 +3717,7 @@ object {
 	/* Posts */
 
 	.site-content {
-		padding: 5.5em 0 0;
+		padding: 1.5em 0 0;
 	}
 
 	.single-post .entry-title,

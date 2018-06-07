@@ -90,13 +90,6 @@ function twentyseventeen_setup() {
 		'audio',
 	) );
 
-	// Add theme support for Custom Logo.
-	add_theme_support( 'custom-logo', array(
-		'width'       => 250,
-		'height'      => 250,
-		'flex-width'  => true,
-	) );
-
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -540,11 +533,6 @@ function twentyseventeen_front_page_template( $template ) {
 	return is_home() ? '' : $template;
 }
 add_filter( 'frontpage_template',  'twentyseventeen_front_page_template' );
-
-/**
- * Implement the Custom Header feature.
- */
-require get_parent_theme_file_path( '/inc/custom-header.php' );
 
 /**
  * Custom template tags for this theme.
