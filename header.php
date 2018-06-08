@@ -20,6 +20,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
+<?php echo get_theme_mod('head_html')?>
 </head>
 
 <body <?php body_class(); ?>>

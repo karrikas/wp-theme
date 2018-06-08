@@ -85,6 +85,7 @@ function twentyseventeen_customize_register( $wp_customize ) {
 		'active_callback' => 'twentyseventeen_is_view_with_layout_option',
 	) );
 
+
 	/**
 	 * Filter number of front page sections in Twenty Seventeen.
 	 *
@@ -118,8 +119,49 @@ function twentyseventeen_customize_register( $wp_customize ) {
 			'container_inclusive' => true,
 		) );
 	}
+
+	/**
+	 * Theme options.
+	 */
+	$wp_customize->add_section( 'add_html', array(
+		'title'    => __( 'Add custom html', 'twentyseventeen' ),
+		'priority' => 150, // Before Additional CSS.
+	) );
+
+	$wp_customize->add_setting( 'head_html', array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+	) );
+
+
+	$wp_customize->add_control( 'head_html', array(
+		'label'       => __( 'Header html', 'twentyseventeen' ),
+		'section'     => 'add_html',
+		'type'        => 'textarea',
+		'description' => __( 'Add html in head of every page', 'twentyseventeen' ),
+		'active_callback' => 'twentyseventeen_is_view_with_layout_option',
+	) );
+
+	$wp_customize->add_setting( 'footer_html', array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+	) );
+
+	$wp_customize->add_control( 'footer_html', array(
+		'label'       => __( 'Footer html', 'twentyseventeen' ),
+		'section'     => 'add_html',
+		'type'        => 'textarea',
+		'description' => __( 'Add html in footer of every page', 'twentyseventeen' ),
+		'active_callback' => 'twentyseventeen_is_view_with_layout_option',
+	) );
+
 }
 add_action( 'customize_register', 'twentyseventeen_customize_register' );
+
+function headhtml($input) {
+
+}
+
 
 /**
  * Sanitize the page layout options.
