@@ -125,7 +125,7 @@ function twentyseventeen_customize_register( $wp_customize ) {
 	 */
 	$wp_customize->add_section( 'add_html', array(
 		'title'    => __( 'Add custom html', 'twentyseventeen' ),
-		'priority' => 150, // Before Additional CSS.
+		'priority' => 10, // Before Additional CSS.
 	) );
 
 	$wp_customize->add_setting( 'head_html', array(
