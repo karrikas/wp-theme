@@ -246,4 +246,18 @@
 		$body.addClass( 'has-header-video' );
 	});
 
+	// add xtra div to youtube iframe
+	$("iframe").each(function(){
+		var $this = $(this);
+
+		var src = $this.attr("src");
+		var n = src.search('you');
+		if (n >= 0) {
+			var newDiv = $('<div class="videoWrapper"></div>');
+			$this.after(newDiv);
+			$this.clone().appendTo(newDiv);
+			$this.remove();
+		}
+	});
+
 })( jQuery );
