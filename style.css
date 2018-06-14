@@ -3215,7 +3215,7 @@ object {
 	}
 
 	.panel-content .entry-header {
-		margin-bottom: 4.5em;
+		margin-bottom: 1.5em;
 	}
 
 	.panel-content .recent-posts .entry-header {
@@ -3661,8 +3661,8 @@ object {
 	}
 
 	.panel-content .wrap {
-		padding-bottom: 4.5em;
-		padding-top: 6em;
+		padding-bottom: 1.5em;
+		padding-top: 2em;
 	}
 
 	.panel-image {
@@ -3688,9 +3688,9 @@ object {
 	/* Front Page - Recent Posts */
 
 	.page-two-column .panel-content .recent-posts {
-		clear: right;
-		float: right;
-		width: 58%;
+		clear: both;
+		float: none;
+		width: 100%;
 	}
 
 	.panel-content .recent-posts article {
@@ -3760,8 +3760,8 @@ object {
 	body.has-sidebar.error404 #primary .page-header,
 	body.page-two-column:not(.archive) #primary .entry-header,
 	body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
-		float: left;
-		width: 36%;
+		float: none;
+		width: 100%;
 	}
 
 	.blog:not(.has-sidebar) #primary article,
@@ -3771,8 +3771,8 @@ object {
 	.error404.has-sidebar #primary .page-content,
 	body.page-two-column:not(.archive) #primary .entry-content,
 	body.page-two-column #comments {
-		float: right;
-		width: 58%;
+		float: none;
+		width: 100%;
 	}
 
 	.blog .site-main > article,
