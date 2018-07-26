@@ -394,9 +394,6 @@ h4,
 h5,
 h6 {
 	clear: both;
-	line-height: 1.4;
-	margin: 0 0 0.75em;
-	padding: 1.5em 0 0;
 }
 
 h1:first-child,
@@ -1831,7 +1828,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 
 .site-content {
-	padding: 2.5em 0 0;
+	padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -3717,7 +3714,7 @@ object {
 	/* Posts */
 
 	.site-content {
-		padding: 1.5em 0 0;
+		padding: 0;
 	}
 
 	.single-post .entry-title,
