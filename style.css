@@ -2468,7 +2468,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	padding-bottom: 3em;
 }
 
-h2.widget-title {
+.h2.widget-title {
 	color: #222;
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -3932,7 +3932,7 @@ object {
 
 	/* Widgets */
 
-	h2.widget-title {
+	.h2.widget-title {
 		font-size: 11px;
 		font-size: 0.6875rem;
 		margin-bottom: 2em;

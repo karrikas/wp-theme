@@ -310,8 +310,8 @@ function twentyseventeen_widgets_init() {
 		'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'twentyseventeen' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<div class="h2 widget-title">',
+		'after_title'   => '</div>',
 	) );
 
 	register_sidebar( array(
@@ -320,8 +320,8 @@ function twentyseventeen_widgets_init() {
 		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<div class="h2 widget-title">',
+		'after_title'   => '</div>',
 	) );
 
 	register_sidebar( array(
@@ -330,8 +330,8 @@ function twentyseventeen_widgets_init() {
 		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<div class="h2 widget-title">',
+		'after_title'   => '</div>',
 	) );
 }
 add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
